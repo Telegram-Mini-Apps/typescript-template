@@ -28,6 +28,6 @@ function onError(e: unknown) {
 }
 
 // Initialize SDK with debug mode on.
-init({ debug: true })
+init({ async: true, cssVars: true, acceptCustomStyles: true })
   .then(onInit)
   .catch(onError);
