@@ -17,13 +17,16 @@ export class WalletProvider {
           .attr('alt', 'Provider logo');
         this.el = $<HTMLDivElement>('<div/>')
           .attr('class', classNames(className, 'wallet-provider'))
+          .attr('style', 'display: none;');
     }
 
     setWallet(wallet: WalletInfoBase | null): void {
       if (!wallet) {
+        this.el.attr('style', 'display: none;');
         this.el.empty();
         return;
       } else {
+        this.el.attr('style', '');
         this.el.append([
           this.img.attr('src', wallet.imageUrl),
           $('<div class="wallet-provider__meta"/>')

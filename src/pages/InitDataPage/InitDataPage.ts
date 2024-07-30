@@ -99,8 +99,4 @@ export class InitDataPage extends PageComponent {
         : $('<i>Application was launched with missing init data</i>'),
     );
   }
-
-  render(root: HTMLElement): void {
-    $(root).empty().append(this.page.element());
-  }
 }

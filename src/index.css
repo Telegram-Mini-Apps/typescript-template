@@ -23,3 +23,7 @@ blockquote p {
 pre {
   overflow: auto;
 }
+
+h1 {
+  margin-top: 0.67em;
+}

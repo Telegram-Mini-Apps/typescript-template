@@ -8,7 +8,6 @@ export class TonConnectButton {
         this.el = $<HTMLDivElement>('<div/>')
             .attr('class', classNames(className))
             .append($('<div style="width: fit-content;"/>').attr('id', id));
-        
     }
 
     element(): HTMLDivElement {
