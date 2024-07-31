@@ -2,6 +2,7 @@ import { HomePage } from '@/pages/HomePage/HomePage';
 import { ThemeParamsPage } from '@/pages/ThemeParamsPage';
 import { LaunchParamsPage } from '@/pages/LaunchParamsPage';
 import { InitDataPage } from '@/pages/InitDataPage/InitDataPage';
+import { TonConnectPage } from '@/pages/TonConnectPage/TonConnectPage';
 import type { AppContext } from '@/context/types';
 
 export interface RoutePage {
@@ -24,8 +25,8 @@ export const routes: {
   { pathname: '/launch-params', Page: LaunchParamsPage, title: 'Launch Params' },
   {
     pathname: '/ton-connect',
-    Page: HomePage,
+    Page: TonConnectPage,
     title: 'TON Connect',
-    icon: `${import.meta.env.BASE_URL}ton.svg`,
+    icon: `${import.meta.env.BASE_URL}/ton.svg`,
   },
 ];

@@ -9,6 +9,7 @@ import { mockEnv } from '@/mockEnv.js';
 import { type RoutePage, routes } from '@/navigation/routes';
 import { initComponents } from '@/initComponents';
 import { initNavigator } from '@/initNavigator';
+import { initTonConnectUI } from '@/initTonConnectUI';
 import type { AppContext } from '@/context/types.js';
 
 import './index.css';
@@ -43,6 +44,7 @@ const {
   initData,
 } = await initComponents();
 const navigator = await initNavigator();
+const tonConnectUI = initTonConnectUI();
 
 const root = document.getElementById('root')!;
 const appContext: AppContext = {
@@ -53,6 +55,7 @@ const appContext: AppContext = {
   themeParams,
   utils,
   viewport,
+  tonConnectUI,
 };
 let prevPage: RoutePage;
 

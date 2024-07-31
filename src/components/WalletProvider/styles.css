@@ -1,0 +1,27 @@
+.wallet-provider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wallet-provider__image {
+  border-radius: 5px;
+}
+
+.wallet-provider__meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet-provider__wallet-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.wallet-provider__app-name {
+  opacity: .4;
+  font-weight: 400;
+  font-size: 14px;
+  vertical-align: top;
+}

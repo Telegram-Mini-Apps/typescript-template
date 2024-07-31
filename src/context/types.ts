@@ -7,6 +7,7 @@ import type {
   Utils,
   Viewport,
 } from '@telegram-apps/sdk';
+import { TonConnectUI } from '@tonconnect/ui';
 
 export interface AppContext {
   initData?: InitData;
@@ -16,4 +17,5 @@ export interface AppContext {
   themeParams: ThemeParams;
   utils: Utils;
   viewport: Viewport;
+  tonConnectUI: TonConnectUI;
 }
