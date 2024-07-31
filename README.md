@@ -55,7 +55,7 @@ you can still develop and test them outside of Telegram during the development p
 To run the application in the development mode, use the `dev` script:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 After this, you will see a similar message in your terminal:
@@ -179,13 +179,13 @@ Before deploying the application, make sure that you've built it and going to de
 static files:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Then, run the deployment process, using the `deploy` script:
 
 ```Bash
-npm run deploy
+pnpm run deploy
 ```
 
 After the deployment completed successfully, visit the page with data according to your
