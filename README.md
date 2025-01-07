@@ -1,5 +1,8 @@
 # TypeScript + Vite example
 
+> [!WARNING]
+> This template is archived and is more likely to be out of date.
+
 This example shows how developer could use TypeScript along with Vite to start developing at
 Telegram Mini Apps platform.
 
